@@ -1,3 +1,16 @@
 body{
 background-color: yellow;
 }
+
+h2 fieldset{
+  background-color: red;
+}
+
+.button {
+  float: left;
+}
+
+.reset {
+font-family: Helvetica; sans-serif;
+font-size: 12px;
+}
