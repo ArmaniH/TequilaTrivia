@@ -3,7 +3,8 @@ $(document).ready(function(){
 
 // Array of questions
 var tQuestions = {
-  question: 'What plant is Tequila distilled from?', answers: [ 'Maguey', 'Agave Americana', 'Agave Azul', 'Agave Attenuata']
+  question: 'What plant is Tequila distilled from?', answers: [ 'Maguey', 'Agave Americana', 'Agave Azul', 'Agave Attenuata'],
+  question2: 'In which Mexican State is the town of Tequila located?', answers2: ['Jalisco', 'Chihuahua', 'Durango', 'Oaxaca'],
 }
 // var triviaQuestions = ['What plant is Tequila distilled from?',
 //                       'Which Mexican state is the town of Tequila located in?',
@@ -40,7 +41,7 @@ var tQuestions = {
     for (i = 0; i < tQuestions.answers.length; ++i) {
       var answer = tQuestions.answers[i]
       var btn = $('<button>'+answer+'</button>')
-      if( i == 0 ){
+      if( i == 2 ){
           btn.addClass("correct");
         }
         $(".q1").append(btn)
@@ -48,11 +49,35 @@ var tQuestions = {
 
       $("button").on("click", function(){
           if($(this).hasClass("correct")){
+            // $("update").(function() {
+            $('#counter').html(function(i, val) { return +val+1 });
+
+
             alert("correct")
           }else{
-            alert("incorrect!")
+            $( "button" ).shake;
+
   }
-})
+
+
+// $('.q1').html('<h2>'+tQuestions.question2+'</h2>')
+// for (i = 0; i < tQuestions.answers2.length; ++i) {
+//   var answer = tQuestions.answers2[i]
+//   var btn = $('<button>'+answer+'</button>')
+//   if( i == 0 ){
+//       btn.addClass("correct");
+//     }
+//     $(".q1").append(btn)
+//   }
+//
+//   $("button").on("click", function(){
+//       if($(this).hasClass("correct")){
+//         alert("correct")
+//       }else{
+//         $( "button" ).shake;
+// }
+// })
+
 
 })
 // Restart button hides question and answers
@@ -62,7 +87,7 @@ var tQuestions = {
     $('h2').hide('fast');
 
     })
-
+})
 // Click event to indicate the correct answer was chosen
 
 // Click event to indicate the incorrect answer was chosen
