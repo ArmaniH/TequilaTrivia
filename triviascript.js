@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('.start').click(function(e) {
     e.preventDefault();
     $('fieldset').hide('slow');
-    $('p').show('slow');
+    $('#counter').show('slow');
     $('h2').show('slow');
     $('input').show('slow');
 // Restart button hides question and answers
@@ -28,21 +28,19 @@ $('.q1').html('<h2>'+tQuestions.question1+'</h2>')
   var btn = $('<button>'+answer+'</button>')
   if( i == 2 ){
     btn.addClass("correct");
-    btn.addClass('shake');
   }
   $(".q1").append(btn)
   }
-  $("button").on("click", function(){
+  $('button').on('click', function(){
 // Click event to indicate the correct answer was chosen
-    if($(this).hasClass("correct")){
+    if($(this).hasClass('correct')){
 // Click event to refresh question AND answer array after answer is selected
       tQuestions.question = tQuestions.question1 + 1;
 // Assign a point for each correct answer
       $('#counter').html(function(i, val) { return +val+1 });
-      alert("Nice!")
+      alert('Nice!')
 // Click event to indicate the incorrect answer was chosen
     }else{
-      $( "button" ).shake;
   }
 
 $('.q1').html('<h2>'+tQuestions.question2+'</h2>')
@@ -50,17 +48,16 @@ $('.q1').html('<h2>'+tQuestions.question2+'</h2>')
   var answer = tQuestions.answers2[i]
   var btn = $('<button>'+answer+'</button>')
   if( i == 0 ){
-    btn.addClass("correct");
+    btn.addClass('correct');
   }
-  $(".q1").append(btn)
+  $('.q1').append(btn)
   }
-  $("button").on("click", function(){
-    if($(this).hasClass("correct")){
+  $('button').on('click', function(){
+    if($(this).hasClass('correct')){
       tQuestions.question = tQuestions.question + 1;
       $('#counter').html(function(i, val) { return +val+1 });
-      alert("Another!")
+      alert('Another!')
     }else{
-      $( "button" ).shake;
 }
 
 $('.q1').html('<h2>'+tQuestions.question3+'</h2>')
@@ -68,17 +65,16 @@ for (i = 0; i < tQuestions.answers3.length; ++i) {
   var answer = tQuestions.answers3[i]
   var btn = $('<button>'+answer+'</button>')
   if( i == 1 ){
-      btn.addClass("correct");
+      btn.addClass('correct');
     }
     $(".q1").append(btn)
   }
-  $("button").on("click", function(){
-    if($(this).hasClass("correct")){
+  $('button').on('click', function(){
+    if($(this).hasClass('correct')){
       tQuestions.question = tQuestions.question + 1;
       $('#counter').html(function(i, val) { return +val+1 });
-      alert("Party!")
+      alert('Party!')
     }else{
-      $( "button" ).shake;
 }
 
 $('.q1').html('<h2>'+tQuestions.question4+'</h2>')
@@ -88,15 +84,14 @@ for (i = 0; i < tQuestions.answers4.length; ++i) {
   if( i == 3 ){
       btn.addClass("correct");
     }
-    $(".q1").append(btn)
+    $('.q1').append(btn)
   }
-  $("button").on("click", function(){
-    if($(this).hasClass("correct")){
+  $('button').on('click', function(){
+    if($(this).hasClass('correct')){
       tQuestions.question = tQuestions.question + 1;
       $('#counter').html(function(i, val) { return +val+1 });
-      alert("Maybe have a glass of water?")
+      alert('Maybe have a glass of water?')
     }else{
-      $( "button" ).shake;
 }
 
 $('.q1').html('<h2>'+tQuestions.question5+'</h2>')
@@ -106,15 +101,14 @@ for (i = 0; i < tQuestions.answers5.length; ++i) {
   if( i == 2 ){
       btn.addClass('correct');
     }
-    $(".q1").append(btn)
+    $('.q1').append(btn)
   }
   $('button').on('click', function(){
-    if($(this).hasClass("correct")){
+    if($(this).hasClass('correct')){
       tQuestions.question = tQuestions.question + 1;
       $('#counter').html(function(i, val) { return +val+1 });
       alert("Let's get you an Uber...")
     }else{
-      $( "button" ).shake;
 }
 
 $('.q1').html('<h2>'+tQuestions.question6+'</h2>')
@@ -124,15 +118,14 @@ for (i = 0; i < tQuestions.answers6.length; ++i) {
   if( i == 1 ){
       btn.addClass("correct");
     }
-    $(".q1").append(btn)
+    $('.q1').append(btn)
   }
   $('button').on('click', function(){
     if($(this).hasClass("correct")){
       tQuestions.question = tQuestions.question + 1;
       $('#counter').html(function(i, val) { return +val+1 });
-      alert("WHERE ARE YOUR PANTS?!")
+      alert('WHERE ARE YOUR PANTS?!')
     }else{
-      $( "button" ).shake;
 }
 
 $('.q1').html('<h2>'+tQuestions.question7+'</h2>')
@@ -140,9 +133,9 @@ for (i = 0; i < tQuestions.answers7.length; ++i) {
   var answer = tQuestions.answers7[i]
   var btn = $('<button>'+answer+'</button>')
   if( i == 0 ){
-      btn.addClass("correct");
+      btn.addClass('correct');
     }
-    $(".q1").append(btn)
+    $('.q1').append(btn)
   }
   $('button').on('click', function(){
     if($(this).hasClass('correct')){
@@ -150,7 +143,6 @@ for (i = 0; i < tQuestions.answers7.length; ++i) {
       $('#counter').html(function(i, val) { return +val+1 });
       alert("F it, let's go again!")
     }else{
-      $( "button" ).shake;;
 }})
 })
 })
