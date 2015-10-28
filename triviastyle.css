@@ -1,0 +1,151 @@
+body{
+  background-image:url(http://photos1.blogger.com/blogger/7844/1241/1600/fused%20agave.0.jpg);
+  background-repeat: space;
+  background-color: yellow;
+  background-size: cover;
+}
+
+form{
+  text-align: center;
+}
+
+form fieldset{
+  background-image: url(http://www.mikesliquors.com/contents/media/tequila.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  border-style: solid;
+  border-width: thin;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#counter {
+  font-size: 50px;
+  text-align: center;
+  border-style: double;
+  border-width: thin;
+}
+
+p{
+  float: right;
+}
+
+h1{
+  font-family: 'Gravitas One', cursive;
+  padding: .8em 1.2em;
+  color: white;
+  background-color: darkcyan;
+}
+
+h2{
+  font-family: 'Gravitas One', cursive;
+  font-size: 40px;
+  background-color: #fff;
+  padding: 90px;
+  border: #000;
+  border-width: thin;
+  border-style: double;
+}
+
+button{
+  border-top: 1px solid #2db552;
+  background: #2ee835;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e9c42), to(#2ee835));
+  background: -webkit-linear-gradient(top, #3e9c42, #2ee835);
+  background: -moz-linear-gradient(top, #3e9c42, #2ee835);
+  background: -ms-linear-gradient(top, #3e9c42, #2ee835);
+  background: -o-linear-gradient(top, #3e9c42, #2ee835);
+  padding: 12.5px 25px;
+  -webkit-border-radius: 38px;
+  -moz-border-radius: 38px;
+  border-radius: 38px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: Georgia, serif;
+  text-decoration: none;
+  vertical-align: middle;
+  }
+  .button:hover {
+    border-top-color: #208fd9;
+    background: #208fd9;
+    color: #ccc;
+    }
+  .button:active {
+    border-top-color: #0d86ab;
+    background: #0d86ab;
+  }
+
+.start {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  padding: 5px 55px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: white;
+  font-size: 14px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  }
+   .button:hover {
+     border-top-color: #28597a;
+     background: #ededed;
+     color: #ccc;
+     }
+   .button:active {
+     border-top-color: #1b435e;
+     background: #1b435e;
+}
+
+.reset {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  padding: 5px 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: white;
+  font-size: 14px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+  position: fixed;
+  }
+  .button:hover {
+    border-top-color: #28597a;
+    background: #ededed;
+    color: #ccc;
+    }
+  .button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+  }
