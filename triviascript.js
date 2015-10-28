@@ -1,7 +1,16 @@
 $(document).ready(function(){
-
   console.log('SGo');
-
+//Clicking start displays first question and 4 potential answers
+  $('.start').click(function(e) {
+    e.preventDefault();
+    $('fieldset').hide('slow');
+    $('p').show('slow');
+    $('h2').show('slow');
+    $('input').show('slow');
+// Restart button hides question and answers
+  $(".reset").on("click", function(){
+     location.reload();
+    })
 // Array of questions and answers
 var tQuestions = {
   question1: ['What plant is Tequila distilled from?'], answers1: ['Maguey', 'Agave Americana', 'Agave Azul', 'Agave Attenuata'],
@@ -13,33 +22,22 @@ var tQuestions = {
   question7: ['The Blue Agave is closley related to which other plant?'], answers7: ['Lily','Cacti', 'Aloe', 'Asparagus'],
 }
 
-    console.log(tQuestions)
-
-
-//Clicking start displays first question and 4 potential answers
-
-  $('.start').click(function(e) {
-    console.log(tQuestions)
-    e.preventDefault();
-    $('fieldset').hide('slow');
-    $('p').show('slow');
-    $('h2').show('slow');
-    $('h3').show('slow');
-
 $('.q1').html('<h2>'+tQuestions.question1+'</h2>')
   for (i = 0; i < tQuestions.answers1.length; ++i) {
   var answer = tQuestions.answers1[i]
   var btn = $('<button>'+answer+'</button>')
-// Click event to indicate the correct answer was chosen
   if( i == 2 ){
     btn.addClass("correct");
+    btn.addClass('shake');
   }
   $(".q1").append(btn)
   }
   $("button").on("click", function(){
+// Click event to indicate the correct answer was chosen
     if($(this).hasClass("correct")){
-// Assign a point for each correct answer
+// Click event to refresh question AND answer array after answer is selected
       tQuestions.question = tQuestions.question1 + 1;
+// Assign a point for each correct answer
       $('#counter').html(function(i, val) { return +val+1 });
       alert("Nice!")
 // Click event to indicate the incorrect answer was chosen
@@ -65,7 +63,6 @@ $('.q1').html('<h2>'+tQuestions.question2+'</h2>')
       $( "button" ).shake;
 }
 
-
 $('.q1').html('<h2>'+tQuestions.question3+'</h2>')
 for (i = 0; i < tQuestions.answers3.length; ++i) {
   var answer = tQuestions.answers3[i]
@@ -83,7 +80,6 @@ for (i = 0; i < tQuestions.answers3.length; ++i) {
     }else{
       $( "button" ).shake;
 }
-
 
 $('.q1').html('<h2>'+tQuestions.question4+'</h2>')
 for (i = 0; i < tQuestions.answers4.length; ++i) {
@@ -103,17 +99,16 @@ for (i = 0; i < tQuestions.answers4.length; ++i) {
       $( "button" ).shake;
 }
 
-
 $('.q1').html('<h2>'+tQuestions.question5+'</h2>')
 for (i = 0; i < tQuestions.answers5.length; ++i) {
   var answer = tQuestions.answers5[i]
   var btn = $('<button>'+answer+'</button>')
   if( i == 2 ){
-      btn.addClass("correct");
+      btn.addClass('correct');
     }
     $(".q1").append(btn)
   }
-  $("button").on("click", function(){
+  $('button').on('click', function(){
     if($(this).hasClass("correct")){
       tQuestions.question = tQuestions.question + 1;
       $('#counter').html(function(i, val) { return +val+1 });
@@ -121,7 +116,6 @@ for (i = 0; i < tQuestions.answers5.length; ++i) {
     }else{
       $( "button" ).shake;
 }
-
 
 $('.q1').html('<h2>'+tQuestions.question6+'</h2>')
 for (i = 0; i < tQuestions.answers6.length; ++i) {
@@ -132,7 +126,7 @@ for (i = 0; i < tQuestions.answers6.length; ++i) {
     }
     $(".q1").append(btn)
   }
-  $("button").on("click", function(){
+  $('button').on('click', function(){
     if($(this).hasClass("correct")){
       tQuestions.question = tQuestions.question + 1;
       $('#counter').html(function(i, val) { return +val+1 });
@@ -140,7 +134,6 @@ for (i = 0; i < tQuestions.answers6.length; ++i) {
     }else{
       $( "button" ).shake;
 }
-
 
 $('.q1').html('<h2>'+tQuestions.question7+'</h2>')
 for (i = 0; i < tQuestions.answers7.length; ++i) {
@@ -151,32 +144,19 @@ for (i = 0; i < tQuestions.answers7.length; ++i) {
     }
     $(".q1").append(btn)
   }
-  $("button").on("click", function(){
-    if($(this).hasClass("correct")){
+  $('button').on('click', function(){
+    if($(this).hasClass('correct')){
       tQuestions.question = tQuestions.question + 1;
       $('#counter').html(function(i, val) { return +val+1 });
       alert("F it, let's go again!")
     }else{
       $( "button" ).shake;;
-
 }})
 })
 })
-
-
-// Restart button hides question and answers
-  $('h3').click(function(){
-    location.reload();
-    $('body')
-    $('p').hide('fast');
-    $('h2').hide('fast');
-  })
 })
 })
 })
 })
 })
 })
-
-
-// Click event to refresh question AND answer array after answer is selected

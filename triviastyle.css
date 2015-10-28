@@ -22,7 +22,6 @@ form fieldset{
   position: relative;
 }
 
-
 #counter {
   font-size: 50px;
   text-align: center;
@@ -82,11 +81,6 @@ button{
     border-top-color: #0d86ab;
     background: #0d86ab;
   }
-
-/*#toggle {
-    width: 100px;
-    height: 100px;
-    background: #ccc;*/
 
 .start {
   border-top: 1px solid #96d1f8;
