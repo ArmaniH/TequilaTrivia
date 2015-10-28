@@ -1,4 +1,6 @@
 body{
+background-image:url(http://photos1.blogger.com/blogger/7844/1241/1600/fused%20agave.0.jpg);
+background-repeat: space;
 background-color: yellow;
 background-size: cover;
 }
@@ -8,13 +10,30 @@ form{
 }
 
 form fieldset{
+  background-image: url(http://www.mikesliquors.com/contents/media/tequila.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #fff;
   border-style: solid;
   border-width: thin;
-  width: auto;
+  width: 300px;
+  height: 200px;
   margin: 0 auto;
+  position: relative;
 }
 
+#counter {
+  font-size: 50px;
+  text-align: right;
+
+}
+
+h1{
+  font-family: 'Gravitas One', cursive;
+  padding: .8em 1.2em;
+  color: white;
+  background-color: darkcyan;
+}
 
 h2.shake{
   direction: left;
@@ -64,6 +83,9 @@ p{
   font-family: Helvetica, Arial, Sans-Serif;
   text-decoration: none;
   vertical-align: middle;
+  position: absolute;
+    top: 50%;
+    left: 50%;
   }
    .button:hover {
      border-top-color: #28597a;

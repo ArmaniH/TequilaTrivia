@@ -3,20 +3,23 @@
 <head>
   <meta charset='UTF-8'>
   <link rel='stylesheet' href='triviastyle.css'>
-  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+  <link href='https://fonts.googleapis.com/css?family=Gravitas+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-   <script src="jquery-shake-master/mindfor.shake.js"></script>
-  <title>Trivia</title>
-  <script src='https://code.jquery.com/jquery-2.1.4.js'>
-  </script>
+  <script src="jquery-shake-master/mindfor.shake.js"></script>
+  <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
   <script src='triviascript.js'></script>
+  <title>Trivia</title>
 </head>
   <header>
-    <div id="counter">0</div>
+
   </header>
 <body>
+
   <!-- <div id="toggle"></div> -->
-  <h1>Trivia</h1>
+  <h1>How well do you know your Tequila?
+  <div id="counter">0</div>
+</h1>
     <form>
       <fieldset>
         <input type='button' type="start" class="start" value="Take a shot!">
@@ -37,7 +40,7 @@
     </form>
     </h2> -->
 
-    <h3>
+    <h3 style='display: none'>
       <input type="reset" class='reset' value='Start Over'>
     </h3>
 </body>
