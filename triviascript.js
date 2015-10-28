@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('.start').click(function(e) {
     e.preventDefault();
     $('fieldset').hide('slow');
-    $('p').show('slow');
+    $('#counter').show('slow');
     $('h2').show('slow');
     $('input').show('slow');
 // Restart button hides question and answers
