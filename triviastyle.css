@@ -1,8 +1,8 @@
 body{
-background-image:url(http://photos1.blogger.com/blogger/7844/1241/1600/fused%20agave.0.jpg);
-background-repeat: space;
-background-color: yellow;
-background-size: cover;
+  background-image:url(http://photos1.blogger.com/blogger/7844/1241/1600/fused%20agave.0.jpg);
+  background-repeat: space;
+  background-color: yellow;
+  background-size: cover;
 }
 
 form{
@@ -22,10 +22,16 @@ form fieldset{
   position: relative;
 }
 
+
 #counter {
   font-size: 50px;
-  text-align: right;
+  text-align: center;
+  border-style: double;
+  border-width: thin;
+}
 
+p{
+  float: right;
 }
 
 h1{
@@ -35,32 +41,52 @@ h1{
   background-color: darkcyan;
 }
 
-h2.shake{
-  direction: left;
-  duration: 2000;
-  vibration: 10;
-
+h2{
+  font-family: 'Gravitas One', cursive;
+  font-size: 40px;
+  background-color: #fff;
+  padding: 90px;
+  border: #000;
+  border-width: thin;
+  border-style: double;
 }
+
+button{
+  border-top: 1px solid #2db552;
+  background: #2ee835;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e9c42), to(#2ee835));
+  background: -webkit-linear-gradient(top, #3e9c42, #2ee835);
+  background: -moz-linear-gradient(top, #3e9c42, #2ee835);
+  background: -ms-linear-gradient(top, #3e9c42, #2ee835);
+  background: -o-linear-gradient(top, #3e9c42, #2ee835);
+  padding: 12.5px 25px;
+  -webkit-border-radius: 38px;
+  -moz-border-radius: 38px;
+  border-radius: 38px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: Georgia, serif;
+  text-decoration: none;
+  vertical-align: middle;
+  }
+  .button:hover {
+    border-top-color: #208fd9;
+    background: #208fd9;
+    color: #ccc;
+    }
+  .button:active {
+    border-top-color: #0d86ab;
+    background: #0d86ab;
+  }
+
 /*#toggle {
     width: 100px;
     height: 100px;
     background: #ccc;*/
-
-p{
-  border-style: solid;
-  border-width: thin;
-  border-color: #000;
-  margin: auto;
-  text-align: center;
-  font-size: 40px;
-  font-family: sans-serif;
-}
-
-/*h2 fieldset{
-  background-color: red;
-  display: inline-block; vertical-align: middle;
-  border: 10px;
-}*/
 
 .start {
   border-top: 1px solid #96d1f8;
@@ -70,7 +96,7 @@ p{
   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
   background: -o-linear-gradient(top, #3e779d, #65a9d7);
-  padding: 5px 10px;
+  padding: 5px 55px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -84,8 +110,8 @@ p{
   text-decoration: none;
   vertical-align: middle;
   position: absolute;
-    top: 50%;
-    left: 50%;
+  top: 75%;
+  left: 20%;
   }
    .button:hover {
      border-top-color: #28597a;
@@ -118,6 +144,7 @@ p{
   font-family: Helvetica, Arial, Sans-Serif;
   text-decoration: none;
   vertical-align: middle;
+  position: fixed;
   }
   .button:hover {
     border-top-color: #28597a;
