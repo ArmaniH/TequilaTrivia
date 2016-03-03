@@ -8,4 +8,4 @@
 6. As a user I can see how many points I've earned from answering questions correctly
 7. As a user I can click a button to restart game.
 
-For my first project I decided to take a simple approach.  I first thought of what elements are involved in a Trivia game. I wrote down the different functions my code would need in order to implement those elements. I used JQuery and CSS build my game. I intended for a pop up image to display at the end of the game, but couldn't get it functioning the way I would have liked so I removed it.
+For my first project I decided to take a simple approach.  I first thought of what elements are involved in a Trivia game. I wrote down the different functions my code would need in order to implement those elements. I used JQuery and CSS to build my game.
